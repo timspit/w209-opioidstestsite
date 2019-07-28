@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>w209 Final Project DRAFT</title>
+  <title>w209 Final Project</title>
 
   <!-- Font Awesome Icons -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -24,6 +24,9 @@
   <!-- <link href="css/creative.min.css" rel="stylesheet"> -->
   <!-- READ IN expanded, no need for minified and I want to edit -->
   <link href="css/creative.css" rel="stylesheet">
+
+  <!-- FAVICON -->
+  <link rel="shortcut icon" type="image/png" href="https://img.icons8.com/ios/50/000000/web-analystics.png"/>
 
 </head>
 
@@ -42,13 +45,13 @@
             <a class="nav-link js-scroll-trigger" href="#intro">Intro</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#task1">Task 1</a>
+            <a class="nav-link js-scroll-trigger" href="#task1">Drug Categories</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#task2">Task 2</a>
+            <a class="nav-link js-scroll-trigger" href="#task2">Prescription Opioids</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#task3">Task 3</a>
+            <a class="nav-link js-scroll-trigger" href="#task3">Socio-Economic Factors</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#sources">Sources</a>
@@ -64,6 +67,7 @@
       <div class="row h-100 align-items-center justify-content-center text-center">
         <div class="col-lg-10 align-self-end">
           <h1 class="text-uppercase text-white font-weight-bold">Understanding the Opioid Epidemic</h1>
+          <h2 class="text-uppercase text-danger font-weight-bold">Site Currently Under Development</h2>
           <hr class="divider my-4">
         </div>
         <div class="col-lg-8 align-self-baseline">
@@ -78,10 +82,22 @@
   <section class="page-section bg-primary" id="intro">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-lg-8 text-center">
+        <div class="col-lg-12 text-center">
           <h2 class="text-white mt-0">Introduction</h2>
           <hr class="divider light my-4">
-          <p class="text-white-50 mb-4">Explanation of methods, definitions, audience context, etc.</p>
+          <!-- INTRO TEXT BELOW -->
+          <p class="text-white mb-4">Motivation, purpose, and methods</p>
+          <p class="text-white-75 mb-4"><b class="text-white">Context:</b> The recent opioid epidemic in United States has been defined by the rapid increase in overdose deaths involving opioid drugs. The <a href="https://www.cdc.gov/drugoverdose/epidemic/index.html" style="color: #cc0000" target="_blank">CDC</a> highlights that from 1999 to 2017, more than 700,000 people have died from a drug overdose in the U.S. and these deaths are increasingly involving opioids, representing approximately 68% of drug overdose deaths in 2017.</p>
+          <p class="text-white-75 mb-4"><b class="text-white">Audience:</b> As public attention and media coverage has focused more and more on this epidemic, policymakers have faced increased pressure to take steps to address the problem. It is important, therefore, that these politicians understand the nature of the epidemic and the various factors influencing its spread.</p>
+          <p class="text-white-75 mb-4"><b class="text-white">Topics:</b> The sections of this report focus on three areas that are relevant for potential policy interventions and are commonly discussed, though perhaps misunderstood, in the public discourse:</p>
+          <ul class="text-white mb-4 list-style-position: inside">
+            <li>The changing landscape of classes of opioids causing overdose deaths</li>
+            <li>The relationship of the increase in overdose deaths with the prescription opioid market</li>
+            <li>Socio-economic and geographic factors and any correlation with opioid overdoses that may inform more targeted intervention efforts</li>
+          </ul>
+          <p class="text-white-75 mb-4"><b class="text-white">Methods:</b> The data underlying this study were compiled from multiple sources (please see "Sources" section). The primary purpose of this study is to explore this data via visualizations to raise and easily communicate findings of interest for policy makers.</p>
+          <p class="text-light"><b class="text-white">NOTE:</b> It is recommended to expand each visualization to full screen for optimal display and interaction.</p>
+
           <a class="btn btn-light btn-xl js-scroll-trigger" href="#task1">Continue</a>
         </div>
       </div>
@@ -89,20 +105,68 @@
   </section>
 
   <!-- task1 Section -->
+  <!-- PLOT SECTION Task1.1 -->
   <section class="page-section" id="task1">
-    <div class="container">
-      <h2 class="text-center mt-0">Task 1</h2>
+    <div class="container-fluid">
+      <h2 class="text-center mt-0">Drug Categories</h2>
       <hr class="divider my-4">
-      <div class="row">
-        <div class="col-lg-8 text-center">
-          <div class="mt-5">
-            <div class='tableauPlaceholder' id='viz1563758547010' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Op&#47;OpioidDataEDA_TimSpittle&#47;DeathsOpioid&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='OpioidDataEDA_TimSpittle&#47;DeathsOpioid' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Op&#47;OpioidDataEDA_TimSpittle&#47;DeathsOpioid&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1563758547010');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-          </div>
-        </div>
+      <div class="row mb-0">
         <div class="col-lg-4 text-center">
           <div class="mt-5">
-            <h3 class="h4 mb-2">Synthetic Opioids Driving Overdose Deaths</h3>
-            <p class="text-muted mb-0">Text accompanying graph.</p>
+            <h3 class="h4 mb-2">Opioid Overdose Deaths Increasing Rapidly</h3>
+            <p class="text-muted mb-0">Drug overdose deaths in general have increased by more than 4x since 1999. While alcohol-related deaths and non-opioid-related overdose deaths have increased across that span, the key driver has in fact been opioid-related deaths. Of the 53,388 increase in overdose deaths over that timespan, 39,550 (74%) of that increase was from opioid-related overdose deaths.</p>
+            <br>
+            <p class="text-muted mb-0">Note that alcohol-related deaths here are defined according to <a href="https://www.cdc.gov/nchs/data/dvs/im9_2002.pdf.pdf" target="_blank">ICD-10 Cause-of-Death codes.</a> This limits the represented deaths here according to medical diagnoses at time of death (similarly true for overdose deaths). However, the CDC also makes estimates of alcohol-attributable deaths and report an average number of total annual alcohol-related deaths closer to 100,000 (50/50 acute vs chronic causes). <a href="https://nccd.cdc.gov/DPH_ARDI/Default/Report.aspx?T=AAM&P=f6d7eda7-036e-4553-9968-9b17ffad620e&R=d7a9b303-48e9-4440-bf47-070a4827e1fd&M=8E1C5233-5640-4EE8-9247-1ECA7DA325B9&F=&D=." target="_blank"> Read more here.</a></p>
+          </div>
+        </div>
+        <div class="col-lg-8 text-center">
+          <div class="mt-5">
+
+            <!-- TABLEAU LINK BELOW -->
+            <div class='tableauPlaceholder' id='viz1564283973462' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Op&#47;OpioidDataEDA_TimSpittle&#47;DrugAlcoholDeaths&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'>
+              <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='OpioidDataEDA_TimSpittle&#47;DrugAlcoholDeaths' /> <param name='tabs' value='no' /><param name='toolbar' value='yes' />
+              <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Op&#47;OpioidDataEDA_TimSpittle&#47;DrugAlcoholDeaths&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>
+              <script type='text/javascript'>                    var divElement = document.getElementById('viz1564283973462');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLOT SECTION task1.2 -->
+  <section class="page-section" id="task1_2">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-4 text-center">
+          <div class="mt-5">
+            <h3 class="h4 mb-2">Synthetic Opioids Most Dramatic Increase</h3>
+            <p class="text-muted mb-0">If we drill down further into opioid-related overdose deaths, we can explore the data by class of opioid. </p>
+            <p class="text-muted mb-0">There are 4 opioid classes:</p>
+            <ul class="text-muted mb-4">
+              <li>Natural/Semisynthetic Opioids: natural opiate chemicals can be found in the opium plant (e.g. morphine) whereas semi-synthetic opioids are derived from these natural opiates (e.g. oxycondone)</li>
+              <li>Heroin: is a particular semi-sythetic opioid that is largely distributed illicitly</li>
+              <li>Synthetic Opioids: are opioids that are not derived from the opium plant, they are completely lab-created and mimic the effects of natural opiates (e.g. fentanyl)</li>
+              <li>Methadone: is a synthetic opioid that is widely used to treat opioid addiction as a means to weaken cravings and withdrawl symptoms</li>
+            </ul>
+            <p class="text-muted mb-0">From 1999 to 2010, much of the increase in opioid-related overdose deaths was attributable to Natural/Semi-Synthetic Opioids.
+              <br>
+              In 2010 Heroin overdose deaths began increasing rapidly, as the increase in Natural/Semi-Synthetic overdose deaths slowed.
+              <br>
+              Then, in 2013, Synthetic Opioid overdose deaths began increasing even more extremely than either of the previous classes.
+              <br>
+              Much of what is driving this increase is availability and potency: because synthetic opioids can be made in a lab, and therefore does not rely on an agricultural supply chain, the illicit market has been flooded with synthetic opioids, like fentanyl. Additionally, synthetic opioids are much more potent then heroin and prescription opioid medications.
+              <br>
+              For clarity in comparison, opioid medications are often converted to a common unit of dosing measure: morphine-milligram-equivalent (<a href "https://www.cdc.gov/drugoverdose/pdf/calculating_total_daily_dose-a.pdf" target="_blank">MME</a>) per day. For context, most drug conversion factors are between 0 and 4, making the comparable in potency with morphine. However, fentanyl is converted in mcg/hr instead of mg/day. The estimated lethal dose of fentanyl is about one milligram, whereas a standard chronic pain prescription of opioids would be 50 MME/day.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-8 text-center">
+          <div class="mt-5">
+
+            <!-- TABLEAU LINK BELOW -->
+            <div class='tableauPlaceholder' id='viz1564286438648' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Op&#47;OpioidDataEDA_TimSpittle&#47;OpioidDeathsbyClass&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='OpioidDataEDA_TimSpittle&#47;OpioidDeathsbyClass' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Op&#47;OpioidDataEDA_TimSpittle&#47;OpioidDeathsbyClass&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1564286438648');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
           </div>
         </div>
       </div>
@@ -112,7 +176,8 @@
   <!-- task2 Section -->
   <section id="task2">
     <div class="container">
-      <h2 class="text-center mt-0">Task 2</h2>
+      <hr>
+      <h2 class="text-center mt-0">Prescription Opioids</h2>
       <hr class="divider my-4">
       <div class="row">
         <div class="col-lg-4 text-center">
@@ -123,6 +188,7 @@
         </div>
         <div class="col-lg-8 text-center">
           <div class="mt-5">
+            <!-- TABLEAU LINK BELOW -->
             <div class='tableauPlaceholder' id='viz1563758956735' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Op&#47;OpioidDataEDA_TimSpittle&#47;PrescriptionsbyCountyMap&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='OpioidDataEDA_TimSpittle&#47;PrescriptionsbyCountyMap' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Op&#47;OpioidDataEDA_TimSpittle&#47;PrescriptionsbyCountyMap&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1563758956735');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
           </div>
         </div>
@@ -133,18 +199,19 @@
   <!-- task3 Section -->
   <section class="page-section" id="task3">
     <div class="container">
-      <h2 class="text-center mt-0">Task 3</h2>
+      <h2 class="text-center mt-0">Socio-Economic Factors</h2>
       <hr class="divider my-4">
       <div class="row">
-        <div class="col-lg-8 text-center">
+        <div class="col-lg-12 text-center">
           <div class="mt-5">
-            <div class='tableauPlaceholder' id='viz1563759148956' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Op&#47;OpioidDataEDA_TimSpittle&#47;RxOMisusevHeroinUse&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='OpioidDataEDA_TimSpittle&#47;RxOMisusevHeroinUse' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Op&#47;OpioidDataEDA_TimSpittle&#47;RxOMisusevHeroinUse&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1563759148956');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+            <!-- TABLEAU LINK BELOW -->
+            <div class='tableauPlaceholder' id='viz1564288858196' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Op&#47;OpioidDataEDA_Dashboard3&#47;Dashboard3&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='OpioidDataEDA_Dashboard3&#47;Dashboard3' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Op&#47;OpioidDataEDA_Dashboard3&#47;Dashboard3&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1564288858196');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='1627px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='1627px';} else { vizElement.style.width='100%';vizElement.style.height='2427px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
           </div>
         </div>
-        <div class="col-lg-4 text-center">
+        <div class="col-lg-12 text-center">
           <div class="mt-5">
-            <h3 class="h4 mb-2">Opioids Misuse vs. Heroin Use</h3>
-            <p class="text-muted mb-0">Text accompanying graph.</p>
+            <h3 class="h4 mb-2">Governmental Response Much Too Late</h3>
+            <p class="text-muted mb-0">[[FILL IN TEXT]]</p>
           </div>
         </div>
       </div>
@@ -154,8 +221,8 @@
   <!-- Call to Action Section -->
   <section class="page-section bg-dark text-white">
     <div class="container text-center">
-      <h2 class="mb-4">Download Report</h2>
-      <a class="btn btn-light btn-xl" href="https://startbootstrap.com/themes/creative/">Download Now!</a>
+      <h2 class="mb-4">See Data and Methods</h2>
+      <a class="btn btn-light btn-xl" href="https://github.com/timspit/209group_opioids">Visit GitHub</a>
     </div>
   </section>
 
@@ -176,8 +243,7 @@
       <div class="row">
         <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
           <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
-          <div>Tim</div>
-          <a class="d-block" href="mailto:dummy+email@berkeley.edu">dummy+email@berkeley.edu</a>
+          <a class="d-block" href="mailto:timspittle@berkeley.edu">Tim</a>
         </div>
         <div class="col-lg-4 mr-auto text-center">
           <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
