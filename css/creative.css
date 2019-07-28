@@ -111,8 +111,13 @@ address {
 ol,
 ul,
 dl {
+  display: inline-block;
   margin-top: 0;
   margin-bottom: 1rem;
+}
+
+ul {
+    list-style-position: inside;
 }
 
 ol ol,
