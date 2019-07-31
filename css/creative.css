@@ -2177,6 +2177,8 @@ textarea.form-control {
   flex-wrap: wrap;
   margin-right: -5px;
   margin-left: -5px;
+  height:80%;
+  overflow: hidden;
 }
 
 .form-row > .col,
