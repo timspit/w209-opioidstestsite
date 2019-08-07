@@ -79,7 +79,7 @@
 
   <!-- Intro -->
   <section class="page-section bg-primary" id="intro">
-    <div class="container">
+    <div class="container-fluid">
       <div class="row justify-content-center">
         <div class="col-lg-12 text-center">
           <h2 class="text-white mt-0">Introduction</h2>
@@ -127,19 +127,44 @@
     <div class="container-fluid">
       <h2 class="text-center mt-0">Drug Categories</h2>
       <hr class="divider my-4">
-      <div class="row mb-0">
+      <div class="row">
         <div class="col-lg-4 text-center">
           <div class="mt-5">
-            <h3 class="h4 mb-2">Opioid Overdose Deaths are Increasing Rapidly</h3>
-            <p class="text-muted mb-0">[WORK ON THIS TEST] Drug overdose deaths in general have increased by more than 4x since 1999. While alcohol-related deaths and non-opioid-related overdose deaths have increased across that span, the key driver has been opioid-related deaths. Of the 53,388 additional overdose deaths over that timespan, 39,550 (74%) were from opioid-related overdose deaths. The magnitude and direction of the opioid epidemic is clear and alarming.
-            <br><br>Note that deaths here are defined according to <a href="https://www.cdc.gov/nchs/data/dvs/im9_2002.pdf.pdf" target="_blank">ICD-10 Cause-of-Death codes.</a> This limits the represented deaths here according to medical diagnoses at time of death. For alcohol-related deaths in particular, the CDC also makes estimates of alcohol-attributable deaths and report an average number of total annual alcohol-related deaths closer to 100,000 (50/50 acute vs chronic causes). This is important additional context when interpretting these results.<a href="https://nccd.cdc.gov/DPH_ARDI/Default/Report.aspx?T=AAM&P=f6d7eda7-036e-4553-9968-9b17ffad620e&R=d7a9b303-48e9-4440-bf47-070a4827e1fd&M=8E1C5233-5640-4EE8-9247-1ECA7DA325B9&F=&D=." target="_blank"> Read more here.</a></p>
+            <h3 class="h4 mb-2">Synthetic Opioid Overdose Deaths are Increasing Rapidly</h3>
+            <!-- TO DO  - make table font smaller -->
+            <table style="width:100%; font-family: font-size=80%" border="1">
+              <tr><th>Drug Class</th> <th>Description</th></tr>
+              <tr><td><b>Natural/Semisynthetic Opioids</b></td>
+                <td>Drugs (primarily prescription opioids [RxOs]) containing (or derived from) natural opiate chemicals found in the opium plant (e.g. morphine [natural], oxycondone [semi-synthetic])</td></tr>
+              <tr><td><b>Heroin</b></td>
+                <td>A particular semi-sythetic opioid that is distributed illicitly</td></tr>
+              <tr><td><b>Synthetic Opioids</b></td>
+                <td>Opioids not derived from the opium plant, but rather completely lab-created chemicals (e.g. fentanyl)</td></tr>
+              <tr><td><b>Methadone</b></td>
+                <td>A synthetic opioid that is widely used to treat opioid addiction as a means to weaken cravings and withdrawl symptoms</td></tr>
+            </table>
+              <br><br><p class="text-muted mb-0">Drug overdose deaths attributable to <b>synthetic opioids</b> have increased <b>10x since 2012</b>. Increased availability and potency of <a href="https://en.wikipedia.org/wiki/Fentanyl" target="_blank">fentanyl</a> in particular has been driving this trend. Fentanyl can be made in a lab, thereby making it easier to produce and distribute illicitly. Fentanyl is also much more potent than heroin and RxOs, making it especially dangerous; while a standard dosage of RxOs for chronic pain treatment would be roughly 50 <a href="https://www.cdc.gov/drugoverdose/pdf/calculating_total_daily_dose-a.pdf" target="_blank">morphine-milligram-equivalent</a> per day, the lethal does of fentanyl is only one MG.
+
+                <br><br>For context, alcohol-related deaths (<a href="https://wonder.cdc.gov/wonder/help/CMF/TechnicalAppendix1999.pdf" target = "_blank">other</a>, i.e. non-poisoning such as liver disease) and non-opioid-related overdose deaths have increased across that span as well (see bottom 2 charts). However opioid-related overdoses have surpassed both in the past 3 years and the trend is only increasing. A rapid increase in heroin overdose deaths preceded the rise of fentanyl but appears to have plateaued.
+
+                <br><br><i>Note that deaths here are defined according to <a href="https://www.cdc.gov/nchs/data/dvs/im9_2002.pdf.pdf" target="_blank">ICD-10 Cause-of-Death codes.</a> This limits the represented deaths here according to medical diagnoses at time of death. This is important context when interpretting these results.<a href="https://nccd.cdc.gov/DPH_ARDI/Default/Report.aspx?T=AAM&P=f6d7eda7-036e-4553-9968-9b17ffad620e&R=d7a9b303-48e9-4440-bf47-070a4827e1fd&M=8E1C5233-5640-4EE8-9247-1ECA7DA325B9&F=&D=." target="_blank"> Read more here.</i></a></p>
           </div>
         </div>
         <div class="col-lg-8 text-center">
           <div class="mt-5">
 
             <!-- TABLEAU LINK BELOW -->
-            <div class='tableauPlaceholder' id='viz1565067367017' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Op&#47;OpioidDataEDA_TimSpittle&#47;DashboardTask1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='OpioidDataEDA_TimSpittle&#47;DashboardTask1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Op&#47;OpioidDataEDA_TimSpittle&#47;DashboardTask1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1565067367017');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='1127px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+            <div class='tableauPlaceholder' id='viz1565067367017' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Op&#47;OpioidDataEDA_TimSpittle&#47;DashboardTask1&#47;1_rss.png' style='border: none' /></a></noscript>
+              <object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='OpioidDataEDA_TimSpittle&#47;DashboardTask1' /><param name='tabs' value='no' />
+                <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Op&#47;OpioidDataEDA_TimSpittle&#47;DashboardTask1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' /></object></div>
+                <script type='text/javascript'>
+                var divElement = document.getElementById('viz1565067367017');
+                var vizElement = divElement.getElementsByTagName('object')[0];
+                if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='1127px';}
+                var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
 
           </div>
         </div>
@@ -148,7 +173,6 @@
   </section>
 
   <!-- task2 Section -->
-  <!-- PLOT SECTION Task2.1 -->
   <section id="task2">
     <div class="container-fluid">
       <hr>
@@ -157,13 +181,11 @@
       <div class="row">
         <div class="col-lg-4 text-center">
           <div class="mt-5">
-            <h3 class="h4 mb-2">Prescriptions Opioids Correlated with RxO Misuse & Overdose, but not Heroin</h3>
-            <p class="text-muted mb-0">[WORK ON THIS TEXT] For this analysis we review the three most recent years of data to explore how recent prescribing rates correlate with levels of opioid misuse/abuse and overdose. The three most rercent years of data were used in particular to align with results from from the National Survey on Drug Use and Health (NDSUH), where <a href = "https://www.ncbi.nlm.nih.gov/books/NBK519777/" target="_blank">recent survey results</a> have included a question about misuse of prescription opioids (RxOs) ["misuse" defined as <a href="https://www.samhsa.gov/data/sites/default/files/NSDUH-FFR2-2015/NSDUH-FFR2-2015.htm" target="_blank">'use in any way not directed by a doctor'</a>] in addition to standard questions on participant illicit drug use, including heroin. Note also that state-level reporting for overdose deaths by class is limited and these results have been limited to those states with available data.
-            <br> From the above plots we saw that from 2016 to 2017 overdose deaths from both heroin and natural/semi-synthetic opioids were similar in magnitude and steady. This makes comparison against RxO prescribing rates particularly insightful.
+            <h3 class="h4 mb-2">Prescriptions Opioids Correlated with RxO Overdose, but not Heroin or Synthetic Opioids</h3>
+            <p class="text-muted mb-0">In this plot we compare RxO prescribing rates with overdose deaths across the 3 main opioid drug classes. Each point represents annual observation for a single state in one of the three most rercent years of data (2015-2017). Note that state-level reporting for overdose deaths by class is limited and these results have been limited to those states with available data.
             <br><br>One common story shared from the opioid epidemic is that of people prescribed RxOs who then begin to misuse and abuse their prescriptions. These people may then become opioid dependent or addicted and potentially divert to taking an illicit opioid, such as heroin.
-            <br><br>The below scatter plot matrix includes state-year-level observations over the years 2015-2017 comparing prescribing rates against overdose deaths from RxOs and heroin (on the left axis) and RxO misuse and heroin use (on the bottom axis).
-            <br><br>What we see is that states in years with higher RxO prescribing rates have a <b>weak positive relationship</b> with RxO misuse and overdose deaths, but not with heroin use or overdose.
-            <br>Heroin does, however, show correlation between use and overdose deaths.
+            <br><br>The scatter plots here appear to indicate that states in years with higher RxO prescribing rates have a slightly higher number of RxO overdose deaths, but the inverse is true for heroin and synthetic opioid overdoses.
+            <br><br>It stands to reason that these plots may indicate that availability of RxOs will make that a more likely source for opioid abuse, whereas where there are fewer RxOs users tend to seek heroin and fentanyl.
             </p>
           </div>
         </div>
@@ -205,7 +227,7 @@
 
             <!-- TABLEAU LINK BELOW -->
             <div class='tableauPlaceholder' id='viz1565068142866' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Op&#47;OpioidDataEDA_Dashboard5&#47;Dashboard32&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='OpioidDataEDA_Dashboard5&#47;Dashboard32' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Op&#47;OpioidDataEDA_Dashboard5&#47;Dashboard32&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1565068142866');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='2027px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='2027px';} else { vizElement.style.width='100%';vizElement.style.height='1877px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-            
+
           </div>
         </div>
       </div>
