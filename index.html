@@ -67,7 +67,6 @@
       <div class="row h-100 align-items-center justify-content-center text-center">
         <div class="col-lg-10 align-self-end">
           <h1 class="text-uppercase text-white font-weight-bold">Understanding the Opioid Epidemic</h1>
-          <h2 class="text-uppercase text-danger font-weight-bold">Site Currently Under Development</h2>
           <hr class="divider my-4">
         </div>
         <div class="col-lg-8 align-self-baseline">
@@ -80,90 +79,92 @@
 
   <!-- Intro -->
   <section class="page-section bg-primary" id="intro">
-    <div class="container">
+    <div class="container-fluid">
       <div class="row justify-content-center">
         <div class="col-lg-12 text-center">
           <h2 class="text-white mt-0">Introduction</h2>
           <hr class="divider light my-4">
-          <!-- INTRO TEXT BELOW -->
-          <p class="text-white mb-4">Motivation, purpose, and methods</p>
-          <p class="text-white-75 mb-4">
-            <b class="text-white">Context:</b>
-              The opioid epidemic in United States has driven a rapid increase in drug overdose deaths. The <a href="https://www.cdc.gov/drugoverdose/epidemic/index.html" style="color: #cc0000" target="_blank">CDC</a> highlights that from 1999 to 2017, more than 700,000 people have died from a drug overdose in the U.S. and these deaths have increasingly involved opioids, representing approximately 68% of drug overdose deaths in 2017.
-            <br><br><b class="text-white">Audience:</b>
-              As public attention and media coverage has focused more and more on this epidemic, policymakers have faced increasing pressure to take steps to address the problem. It is important, therefore, that these politicians understand the nature of the epidemic and the various factors influencing its spread.
-            <br><br><b class="text-white">Topics:</b>
-              The sections of this report focus on three research areas that are relevant for potential policy interventions and are commonly discussed (though perhaps misunderstood) in the public discourse:
-            <table class="text-white mb-4" style="width:100%" border="1">
-              <tr><td><b>Drug Categories</b></td>       <td>The changing landscape of classes of opioids causing overdose deaths</td></tr>
-              <tr><td><b>Prescription Opioids</b></td>  <td>The relationship of the increase in overdose deaths with the prescription opioid market</td></tr>
-              <tr><td><b>Socio-Economic Factors</b></td><td>Poetntial geographical and socio-econmic factors to be considered for more targeted opioid intervention policies</td></tr>
-            </table>
-            <p class="text-white-75 mb-4"><b class="text-white">Methods:</b>
-              The data underlying this study were compiled from multiple sources (please see <a href="#sources">Sources</a> section). The primary purpose of this study is to explore this data via visualizations to raise and easily communicate findings of interest for policy makers.
-            </p>
-          <i class="text-light">NOTE: It is recommended to expand each visualization to full screen for optimal display. All plots are interactive.</i><br>
-          <hr class="divider light my-4">
-          <a class="btn btn-light btn-xl js-scroll-trigger" href="#task1">Continue</a>
         </div>
       </div>
+      <!-- INTRO TEXT BELOW -->
+      <p class="text-white-75 mb-4">
+        <div class="row mb-0">
+          <div class="col-lg-4 text-center">
+            <p class="text-white mb-4">Instructions</p>
+            <p class="text-white mb-4">All of the data visualizations are <b>interactive</b>, so please explore the plots to drill down and examine their various elements.
+            <br><br>
+            It is recommended that users expand each visualization to full screen for optimal display.
+            <br><br>
+            There is complementary text in each section to provide context for the visualizations. Please reference as needed.
+            </p>
+            </p>
+          </div>
+          <div class="col-lg-4 text-center">
+            <p class="text-white mb-4">Motivation & Purpose</p>
+            The opioid epidemic in United States has driven a rapid increase in drug overdose deaths. According to the <a href="https://www.cdc.gov/drugoverdose/epidemic/index.html" style="color: #cc0000" target="_blank">CDC</a>, from 1999 to 2017, more than 700,000 people have died from a drug overdose in the U.S. and these deaths have increasingly involved opioids.
+            <br><br>
+            As public attention and media coverage focuses more on this epidemic, <b>policymakers</b> have faced increasing pressure to take action. The purpose of this study is, therefore, to use data visualization to inform policymakers on the nature of the epidemic and the various factors influencing its spread so that they can be well-informed in designing intervention strategies.
+          </div>
+          <div class="col-lg-4 text-center">
+            <p class="text-white mb-4">Topics</p>
+            This report focuses on three research areas that are relevant for potential policy interventions and are commonly discussed (though perhaps misunderstood) in the public discourse:
+            <table style="width:100%" border="1">
+              <tr><td><b>Drug Categories</b></td>       <td>The changing landscape of classes of opioids causing overdose deaths</td></tr>
+              <tr><td><b>Prescription Opioids</b></td>  <td>The relationship of the increase in overdose deaths with the prescription opioid market</td></tr>
+              <tr><td><b>Socio-Economic Factors</b></td><td>Potential geographical and socio-econmic factors to be considered for more targeted opioid intervention policies</td></tr>
+            </table>
+          </div>
+        </div>
+        <hr class="divider light my-4">
+        <div class="col-lg-12 text-center">
+          <a class="btn btn-light btn-xl js-scroll-trigger" href="#task1">Continue</a>
+        </div>
     </div>
   </section>
 
   <!-- task1 Section -->
-  <!-- PLOT SECTION Task1.1 -->
   <section class="page-section" id="task1">
     <div class="container-fluid">
       <h2 class="text-center mt-0">Drug Categories</h2>
       <hr class="divider my-4">
-      <div class="row mb-0">
-        <div class="col-lg-4 text-center">
-          <div class="mt-5">
-            <h3 class="h4 mb-2">Opioid Overdose Deaths are Increasing Rapidly</h3>
-            <p class="text-muted mb-0">Drug overdose deaths in general have increased by more than 4x since 1999. While alcohol-related deaths and non-opioid-related overdose deaths have increased across that span, the key driver has been opioid-related deaths. Of the 53,388 additional overdose deaths over that timespan, 39,550 (74%) were from opioid-related overdose deaths. The magnitude and direction of the opioid epidemic is clear and alarming.
-            <br><br>Note that deaths here are defined according to <a href="https://www.cdc.gov/nchs/data/dvs/im9_2002.pdf.pdf" target="_blank">ICD-10 Cause-of-Death codes.</a> This limits the represented deaths here according to medical diagnoses at time of death. For alcohol-related deaths in particular, the CDC also makes estimates of alcohol-attributable deaths and report an average number of total annual alcohol-related deaths closer to 100,000 (50/50 acute vs chronic causes). This is important additional context when interpretting these results.<a href="https://nccd.cdc.gov/DPH_ARDI/Default/Report.aspx?T=AAM&P=f6d7eda7-036e-4553-9968-9b17ffad620e&R=d7a9b303-48e9-4440-bf47-070a4827e1fd&M=8E1C5233-5640-4EE8-9247-1ECA7DA325B9&F=&D=." target="_blank"> Read more here.</a></p>
-          </div>
-        </div>
-        <div class="col-lg-8 text-center">
-          <div class="mt-5">
-
-            <!-- TABLEAU LINK BELOW -->
-            <div class='tableauPlaceholder' id='viz1564537462418' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Op&#47;OpioidDataEDA_TimSpittle&#47;1_1DrugAlcoholDeaths&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='OpioidDataEDA_TimSpittle&#47;1_1DrugAlcoholDeaths' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Op&#47;OpioidDataEDA_TimSpittle&#47;1_1DrugAlcoholDeaths&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1564537462418');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-
-          </div>
-        </div>
-      </div>
-
-  <!-- PLOT SECTION task1.2 -->
       <div class="row">
         <div class="col-lg-4 text-center">
           <div class="mt-5">
-            <h3 class="h4 mb-2">Synthetic Opioids Most Dramatic Increase</h3>
-            <p class="text-muted mb-0">If we drill down further into opioid-related overdose deaths, we can explore the data by class of opioid. There are 4 opioid classes:
-            <br>
-            <table style="width:100%" border="1">
+            <h3 class="h4 mb-2">Synthetic Opioid Overdose Deaths are Increasing Rapidly</h3>
+            <!-- TO DO  - make table font smaller -->
+            <table style="width:100%; font-family: font-size=80%" border="1">
               <tr><th>Drug Class</th> <th>Description</th></tr>
               <tr><td><b>Natural/Semisynthetic Opioids</b></td>
-                <td>Natural opiate chemicals can be found in the opium plant (e.g. morphine) whereas semi-synthetic opioids are derived from these natural opiates (e.g. oxycondone). This class is made up primarily of prescription opioids (RxOs)</td></tr>
+                <td>Drugs (primarily prescription opioids [RxOs]) containing (or derived from) natural opiate chemicals found in the opium plant (e.g. morphine [natural], oxycondone [semi-synthetic])</td></tr>
               <tr><td><b>Heroin</b></td>
                 <td>A particular semi-sythetic opioid that is distributed illicitly</td></tr>
               <tr><td><b>Synthetic Opioids</b></td>
-                <td>Opioids that are not derived from the opium plant, but are rather completely lab-created and mimic the effects of natural opiates (e.g. fentanyl)</td></tr>
+                <td>Opioids not derived from the opium plant, but rather completely lab-created chemicals (e.g. fentanyl)</td></tr>
               <tr><td><b>Methadone</b></td>
                 <td>A synthetic opioid that is widely used to treat opioid addiction as a means to weaken cravings and withdrawl symptoms</td></tr>
             </table>
-            <br>
-            <p class="text-muted mb-0">From 1999 to 2010, much of the increase in opioid-related overdose deaths was attributable to Natural/Semi-Synthetic Opioids.
-              <br><br>Beginning in 2010 Heroin overdose deaths began increasing rapidly, as the increase in Natural/Semi-Synthetic overdose deaths slowed. This may coincide with the <a href="https://www.pharmacytimes.com/publications/issue/2011/may2011/drugdiversion-0511" target="_blank">reformulation of OxyContin to stem RxO abuse</a> and indicate a substitution effect but a confluence of factors, including <a href="https://www.cdc.gov/mmwr/preview/mmwrhtml/mm6339a1.htm" target="_blank"> an increased supply of heroin</a> may all have affected this shift.
-              <br><br>Then, in 2013, Synthetic Opioid overdose deaths began increasing even more extremely than either of the previous classes. Much of what is driving this increase is increased availability and potency of <a href="https://en.wikipedia.org/wiki/Fentanyl" target="_blank">fentanyl</a>. Because synthetic opioids can be made in a lab, and therefore do not rely on an agricultural supply chain (as with heroin), the illicit market has been flooded with synthetic opioids in recent years. Synthetic opioids are much more potent than heroin and prescription opioid medications, therefore drug users are less likely to be accustomed to proper dosing. In other cases fentanyl is being added to other illicit drugs to increase their potency which creates situations where users are not even aware of the content or strength of what they are taking. For clarity in comparison, opioid medications are often converted to a common unit of dosing measure: morphine-milligram-equivalent <a href="https://www.cdc.gov/drugoverdose/pdf/calculating_total_daily_dose-a.pdf" target="_blank">(MME)</a> per day. While a standard dosage of RxOs for chronic pain treatment would be roughly 50 MME/day, the lethal does of fentanyl is onlyt one MG.
-            </p>
+              <br><br><p class="text-muted mb-0">Drug overdose deaths attributable to <b>synthetic opioids</b> have increased <b>10x since 2012</b>. Increased availability and potency of <a href="https://en.wikipedia.org/wiki/Fentanyl" target="_blank">fentanyl</a> in particular has been driving this trend. Fentanyl can be made in a lab, thereby making it easier to produce and distribute illicitly. Fentanyl is also much more potent than heroin and RxOs, making it especially dangerous; while a standard dosage of RxOs for chronic pain treatment would be roughly 50 <a href="https://www.cdc.gov/drugoverdose/pdf/calculating_total_daily_dose-a.pdf" target="_blank">morphine-milligram-equivalent</a> per day, the lethal does of fentanyl is only one MG.
+
+                <br><br>For context, alcohol-related deaths (<a href="https://wonder.cdc.gov/wonder/help/CMF/TechnicalAppendix1999.pdf" target = "_blank">other</a>, i.e. non-poisoning such as liver disease) and non-opioid-related overdose deaths have increased across that span as well (see bottom 2 charts). However opioid-related overdoses have surpassed both in the past 3 years and the trend is only increasing. A rapid increase in heroin overdose deaths preceded the rise of fentanyl but appears to have plateaued.
+
+                <br><br><i>Note that deaths here are defined according to <a href="https://www.cdc.gov/nchs/data/dvs/im9_2002.pdf.pdf" target="_blank">ICD-10 Cause-of-Death codes.</a> This limits the represented deaths here according to medical diagnoses at time of death. This is important context when interpretting these results.<a href="https://nccd.cdc.gov/DPH_ARDI/Default/Report.aspx?T=AAM&P=f6d7eda7-036e-4553-9968-9b17ffad620e&R=d7a9b303-48e9-4440-bf47-070a4827e1fd&M=8E1C5233-5640-4EE8-9247-1ECA7DA325B9&F=&D=." target="_blank"> Read more here.</i></a></p>
           </div>
         </div>
         <div class="col-lg-8 text-center">
           <div class="mt-5">
 
             <!-- TABLEAU LINK BELOW -->
-            <div class='tableauPlaceholder' id='viz1564537484092' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Op&#47;OpioidDataEDA_TimSpittle&#47;1_2OpioidDeathsbyClass&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='OpioidDataEDA_TimSpittle&#47;1_2OpioidDeathsbyClass' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Op&#47;OpioidDataEDA_TimSpittle&#47;1_2OpioidDeathsbyClass&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1564537484092');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+            <div class='tableauPlaceholder' id='viz1565067367017' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Op&#47;OpioidDataEDA_TimSpittle&#47;DashboardTask1&#47;1_rss.png' style='border: none' /></a></noscript>
+              <object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='OpioidDataEDA_TimSpittle&#47;DashboardTask1' /><param name='tabs' value='no' />
+                <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Op&#47;OpioidDataEDA_TimSpittle&#47;DashboardTask1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' /></object></div>
+                <script type='text/javascript'>
+                var divElement = document.getElementById('viz1565067367017');
+                var vizElement = divElement.getElementsByTagName('object')[0];
+                if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='1127px';}
+                var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
 
           </div>
         </div>
@@ -172,49 +173,19 @@
   </section>
 
   <!-- task2 Section -->
-  <!-- PLOT SECTION Task2.1 -->
   <section id="task2">
-  <div class="container">
-    <hr>
-    <h2 class="text-center mt-0">Prescription Opioids</h2>
-    <hr class="divider my-4">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <div class="mt-5">
-          <h3 class="h4 mb-2">Prescriptions Opioids Correlated with RxO Misuse & Overdose, but not Heroin</h3>
-          <p class="text-muted mb-0">For this analysis we review the three most recent years of data to explore how recent prescribing rates correlate with levels of opioid misuse/abuse and overdose. The three most rercent years of data were used in particular to align with results from from the National Survey on Drug Use and Health (NDSUH), where <a href = "https://www.ncbi.nlm.nih.gov/books/NBK519777/" target="_blank">recent survey results</a> have included a question about misuse of prescription opioids (RxOs) ["misuse" defined as <a href="https://www.samhsa.gov/data/sites/default/files/NSDUH-FFR2-2015/NSDUH-FFR2-2015.htm" target="_blank">'use in any way not directed by a doctor'</a>] in addition to standard questions on participant illicit drug use, including heroin. Note also that state-level reporting for overdose deaths by class is limited and these results have been limited to those states with available data.
-          <br> From the above plots we saw that from 2016 to 2017 overdose deaths from both heroin and natural/semi-synthetic opioids were similar in magnitude and steady. This makes comparison against RxO prescribing rates particularly insightful.
-          <br><br>One common story shared from the opioid epidemic is that of people prescribed RxOs who then begin to misuse and abuse their prescriptions. These people may then become opioid dependent or addicted and potentially divert to taking an illicit opioid, such as heroin.
-          <br><br>The below scatter plot matrix includes state-year-level observations over the years 2015-2017 comparing prescribing rates against overdose deaths from RxOs and heroin (on the left axis) and RxO misuse and heroin use (on the bottom axis).
-          <br><br>What we see is that states in years with higher RxO prescribing rates have a <b>weak positive relationship</b> with RxO misuse and overdose deaths, but not with heroin use or overdose.
-          <br>Heroin does, however, show correlation between use and overdose deaths.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-12 ht-6 text-center">
-        <div class="mt-5">
-
-          <!-- TABLEAU LINK BELOW -->
-          <div class='tableauPlaceholder' id='viz1564535247567' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Op&#47;OpioidDataEDA_TimSpittle&#47;2_1RxOHeroinScatterMatrixper100&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='OpioidDataEDA_TimSpittle&#47;2_1RxOHeroinScatterMatrixper100' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Op&#47;OpioidDataEDA_TimSpittle&#47;2_1RxOHeroinScatterMatrixper100&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1564535247567');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-  <!-- PLOT SECTION Task2.2 -->
-    <section id="task2_2">
-    <div class="container">
+    <div class="container-fluid">
       <hr>
+      <h2 class="text-center mt-0">Prescription Opioids</h2>
+      <hr class="divider my-4">
       <div class="row">
         <div class="col-lg-4 text-center">
           <div class="mt-5">
-            <h3 class="h4 mb-2">Prescription Opioids Not Correlated with Overall Drug Overdose Deaths</h3>
-            <p class="text-muted mb-0">Similar to the above plot we then take a step back to look at correlation between prescribing rates and all general drug overdose deaths.
-              <br><br>What we see is much less clear than the above plots narrowly focused on RxO overdose: the slope of the relationship has been decreasing the past 3 years to the point of being completely unrelated in 2017. While this does not necessarily decouple a relationship between high prescribing rates and overdose deaths, what it does show is that 1) there are likely many factors affecting overdose death levels (not just RxO prescribing rates) and 2) the trends may be shifting. The opioid epidemic has put increased scrutiny on the RxO industry - the shifts toward illicit heroin and fentanyl may be indicative of a change in the epidemic and policymakers should be congnizant of this.
+            <h3 class="h4 mb-2">Prescriptions Opioids Correlated with RxO Overdose, but not Heroin or Synthetic Opioids</h3>
+            <p class="text-muted mb-0">In this plot we compare RxO prescribing rates with overdose deaths across the 3 main opioid drug classes. Each point represents annual observation for a single state in one of the three most rercent years of data (2015-2017). Note that state-level reporting for overdose deaths by class is limited and these results have been limited to those states with available data.
+            <br><br>One common story shared from the opioid epidemic is that of people prescribed RxOs who then begin to misuse and abuse their prescriptions. These people may then become opioid dependent or addicted and potentially divert to taking an illicit opioid, such as heroin.
+            <br><br>The scatter plots here appear to indicate that states in years with higher RxO prescribing rates have a slightly higher number of RxO overdose deaths, but the inverse is true for heroin and synthetic opioid overdoses.
+            <br><br>It stands to reason that these plots may indicate that availability of RxOs will make that a more likely source for opioid abuse, whereas where there are fewer RxOs users tend to seek heroin and fentanyl.
             </p>
           </div>
         </div>
@@ -222,7 +193,7 @@
           <div class="mt-5">
 
             <!-- TABLEAU LINK BELOW -->
-            <div class='tableauPlaceholder' id='viz1564535272024' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Op&#47;OpioidDataEDA_TimSpittle&#47;2_2OverdosevPrescriptions&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='OpioidDataEDA_TimSpittle&#47;2_2OverdosevPrescriptions' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Op&#47;OpioidDataEDA_TimSpittle&#47;2_2OverdosevPrescriptions&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1564535272024');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+            <div class='tableauPlaceholder' id='viz1565067402994' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Op&#47;OpioidDataEDA_TimSpittle&#47;Task2RxOScatterMatrixper100&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='OpioidDataEDA_TimSpittle&#47;Task2RxOScatterMatrixper100' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Op&#47;OpioidDataEDA_TimSpittle&#47;Task2RxOScatterMatrixper100&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1565067402994');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
 
           </div>
         </div>
@@ -232,24 +203,32 @@
 
   <!-- task3 Section -->
   <section class="page-section" id="task3">
-    <div class="container">
+    <div class="container-fluid">
+      <hr>
       <h2 class="text-center mt-0">Socio-Economic Factors</h2>
       <hr class="divider my-4">
       <div class="row">
-        <div class="col-lg-12 text-center">
+        <div class="col-lg-4 text-left">
           <div class="mt-5">
-            <h3 class="h4 mb-2">[[PUNCHLINE]]</h3>
-            <p class="text-muted mb-0">[[FILL IN TEXT]] - Explore prescribing rates vs socio-economic and government spending factors.
-              <br><i class="text-light">NOTE: Hold CTRL to select multiple states</i>
+            <h3 class="h4 mb-2"></h3>
+            <p class="text-muted mb-0">Ongoing Opioid Epidemic has had caused personal toll and financial toll on the public.
+              <br><br>U.S. Department of Health and Human Services provides grants to States for substance abuse treatment and prevension programs  via Substance Abuse and Mental Health Services Administration <a href="https://www.samhsa.gov">(SAMHSA)</a>.
+              <br><br>Figure on the right shows SAMHSA budget between 2007 and 2018. Opioid deaths per 100,000 are also shown. Federal and State governments response to the epidemic (at least budgetarily) has lagged behind.
+              <br><br>In the following page, we will dive into the opioid epidemic metrics, state government spending to combat the epidemic and socio-economic parameters during the same time period.
             </p>
           </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-12 text-center">
+        <div class="col-lg-8 text-center">
           <div class="mt-5">
             <!-- TABLEAU LINK BELOW -->
-            <div class='tableauPlaceholder' id='viz1564288858196' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Op&#47;OpioidDataEDA_Dashboard3&#47;Dashboard3&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='OpioidDataEDA_Dashboard3&#47;Dashboard3' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Op&#47;OpioidDataEDA_Dashboard3&#47;Dashboard3&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1564288858196');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='1627px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='1627px';} else { vizElement.style.width='100%';vizElement.style.height='2427px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+            <div class='tableauPlaceholder' id='viz1565210018933' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Op&#47;OpioidEpidemicDashboard&#47;Dashboard52&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='OpioidEpidemicDashboard&#47;Dashboard52' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Op&#47;OpioidEpidemicDashboard&#47;Dashboard52&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1565210018933');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='800px';vizElement.style.height='527px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='800px';vizElement.style.height='527px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+            </div>
+          </div>
+        <div class="col-lg-12 text-center">
+          <div class="mt-5">
+
+            <!-- TABLEAU LINK BELOW -->
+            <div class='tableauPlaceholder' id='viz1565212760068' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Op&#47;OpioidEpidemicDashboard2&#47;Dashboard33&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='OpioidEpidemicDashboard2&#47;Dashboard33' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Op&#47;OpioidEpidemicDashboard2&#47;Dashboard33&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1565212760068');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1200px';vizElement.style.height='1377px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1200px';vizElement.style.height='1377px';} else { vizElement.style.width='100%';vizElement.style.height='1877px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
           </div>
         </div>
       </div>
@@ -283,8 +262,12 @@
                 <td><a href="https://www.cdc.gov/drugoverdose/maps/rxrate-maps.html", target="_blank">CDC, U.S. Opioid Prescribing Rate Maps.</a></td></tr>
               <tr><td><b>RxO Misuse + Heroin Use Rates (by State)</b></td>
                 <td><a href="https://www.samhsa.gov/data/report/2016-2017-nsduh-estimated-totals-state", target="_blank">SAMHSA, NSDUH Estimated Totals by State. Tables 5/9: Heroin Use in the Past Year. Tables 11/12: Pain Reliever Misuse in the Past Year (year-dependent)</a></td></tr>
+              <tr><td><b>Opioid Abuse Prevention and Treatment Budget per State</b></td>
+                <td><a href="https://www.samhsa.gov/about-us/budget", target="_blank">SAMHSA Annual Budget (2009-2018) (year-dependent)</a></td></tr>
               <tr><td><b>Population (by State)</b></td>
                 <td><a href="https://www.census.gov/data/tables/time-series/demo/popest/2010s-state-total.html", target="_blank">US Census</a></td></tr>
+              <tr><td><b>Unemployment (by State)</b></td>
+                <td><a href="https://data.bls.gov/lausmap/showMap.jsp;jsessionid=15EE39F1BAEA8F001359968DF1A4A74F", target="_blank">Bureau of Labor Statistics</a></td></tr>
             </table>
           </p>
         </div>
@@ -296,7 +279,7 @@
         </div>
         <div class="col-lg-4 mr-auto text-center">
           <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
-          <a class="d-block" href="mailto:dummy+email@berkeley.edu">Murat</a>
+          <a class="d-block" href="mailto:murat.melek@berkeley.edu">Murat</a>
         </div>
       </div>
     </div>
